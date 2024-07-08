@@ -1,13 +1,22 @@
 import CategoryComp from "@/components/CategoryComp";
 import ProductComp from "@/components/ProductComp";
-import ProductDetail from "@/components/ProductDetail";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="w-full mx-auto max-w-screen-xxl">
       <div className="w-full flex flex-col justify-center items-center">
-        <div className="w-full h-[300px]">
+        <div className="w-full md:hidden block h-[260px]">
+          <div className="w-full h-full relative">
+            <Image
+              src="/mobile/mobile-showcase.png"
+              alt="showcase"
+              fill
+              className="w-auto absolute object-contain"
+            />
+          </div>
+        </div>
+        <div className="w-full h-[300px] hidden md:block">
           <div className="w-full h-full relative">
             <Image
               src="/desktop/desktop-showcase.png"
@@ -33,17 +42,20 @@ export default function Home() {
           </div>
 
           {/* Products Display */}
-          <div className="w-full py-[24px]">
+          <div className="w-full py-[24px] flex flex-col gap-[24px]">
             <CategoryComp title="For You" />
-            {/* <CategoryComp title="New Products" /> */}
+            <CategoryComp title="New Products" />
             {/* Trending */}
             <div className="w-full">
-              <p className="text-medium md:font-semibold text-base md:text-[24px] leading-[20.16px]md:leading-[30.24px] text-[#151515]">
+              <p className="text-medium md:font-semibold text-base md:text-[24px] leading-[20.16px] md:leading-[30.24px] text-[#151515]">
                 Trending
               </p>
+              <div className="w-full flex">
+                <div></div>
+              </div>
             </div>
-            {/* <CategoryComp title="Women" />
-            <CategoryComp title="Sneakers" /> */}
+            <CategoryComp title="Women" />
+            <CategoryComp title="Sneakers" />
           </div>
         </section>
       </div>

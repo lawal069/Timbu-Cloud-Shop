@@ -72,7 +72,7 @@ const PaymentComp = () => {
         </div>
       </div>
 
-      <Button className="w-full h-[60px] px-[24px] py-[20px] text-base text-[#fefefe]">
+      <Button className="w-full h-[60px] px-[24px] py-[20px] text-base text-[#fefefe] bg-[#151515] hover:bg-[#151515]">
         Pay
       </Button>
     </div>

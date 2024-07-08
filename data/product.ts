@@ -1,14 +1,14 @@
-export interface ProductDetail{
-    id: string;
-    name: string;
-    price: string;
-    description: string;
-    imgSrc: string;
+export interface ProductDetail {
+  productId?: string;
+  name?: string;
+  price?: string;
+  description?: string;
+  imgSrc?: string;
 }
 
-export const productData: ProductDetail[] = [
+export const ProductData: ProductDetail[] = [
   {
-    id: "p1",
+    productId: "01",
     name: "Nike AirForce 1",
     price: "₦300,000",
     description:
