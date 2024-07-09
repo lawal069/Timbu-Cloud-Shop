@@ -2,7 +2,7 @@ import React from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 
-const PaymentComp = () => {
+const CheckoutComp = () => {
   return (
     <div className="px-[20px] md:px-[120px] py-[24px] w-full flex flex-col justify-center items-center gap-[24px]">
       <div className="w-full flex flex-col md:flex-row gap-[24px] justify-center items-center">
@@ -79,4 +79,4 @@ const PaymentComp = () => {
   );
 };
 
-export default PaymentComp;
+export default CheckoutComp;

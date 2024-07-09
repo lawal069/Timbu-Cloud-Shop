@@ -1,6 +1,7 @@
 import React from "react";
 import CartDetail from "./CartDetail";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const CartComp = () => {
   return (
@@ -19,19 +20,28 @@ const CartComp = () => {
       <div className="w-full flex flex-col gap-[20px] py-[10px]">
         <div className="w-full flex items-center justify-between">
           <p className="text-base font-medium">Sub-Total</p>
-          <p className="text-[20px] font-bold leading-[25.2px]">₦47,000</p>
+          <p className="text-[20px] font-bold leading-[25.2px] text-[#3A9A32]">
+            ₦47,000
+          </p>
         </div>
         <div className="w-full flex items-center justify-between">
           <p className="text-base font-medium">Delivery Fee</p>
-          <p className="text-[20px] font-bold leading-[25.2px]">₦3,000</p>
+          <p className="text-[20px] font-bold leading-[25.2px] text-[#3A9A32]">
+            ₦3,000
+          </p>
         </div>
         <div className="w-full flex items-center justify-between">
           <p className="text-base font-medium">Total</p>
-          <p className="text-[20px] font-bold leading-[25.2px]">₦50,000</p>
+          <p className="text-[20px] font-bold leading-[25.2px] text-[#3A9A32]">
+            ₦50,000
+          </p>
         </div>
 
-        <Button className="w-full bg-[#151515] hover:bg-[#151515] px-[24px] py-[20px] h-[60px]">
-          Checkout
+        <Button
+          asChild
+          className="w-full bg-[#151515] hover:bg-[#151515] px-[24px] py-[20px] h-[60px]"
+        >
+          <Link href={"/checkout"}>Checkout</Link>
         </Button>
       </div>
     </div>

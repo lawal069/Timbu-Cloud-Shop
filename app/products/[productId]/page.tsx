@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import React from "react";
-import { ProductData } from "@/data/product";
+import { ProductData } from "@/data/productsData";
 import { Button } from "@/components/ui/button";
-import ProductComp from "@/components/ProductComp";
+// import ProductComp from "@/components/ProductComp";
 import RateComp from "@/components/RateComp";
 import CategoryComp from "@/components/CategoryComp";
 import Link from "next/link";
@@ -33,7 +33,7 @@ const ProductDetail = ({ params }: pageProps) => {
                   src={selectedProduct?.imgSrc || ""}
                   alt=""
                   fill
-                  className="w-auto object-contain absolute"
+                  className="w-auto object-cover absolute rounded-[8px]"
                 />
               </div>
             </div>
@@ -129,8 +129,11 @@ const ProductDetail = ({ params }: pageProps) => {
             </div>
           </div>
         </div>
-        <div className="px-[20px] md:px-[120px]">
-          <CategoryComp title="Related Item" />
+        <div className="px-[20px] md:px-[120px] flex flex-col">
+          <p className="text-medium md:font-semibold text-base md:text-[24px] leading-[20.16px] md:leading-[30.24px] text-[#151515]">
+            Related Item
+          </p>
+          <CategoryComp title="Men" />
         </div>
       </div>
     </div>

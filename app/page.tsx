@@ -1,3 +1,4 @@
+import CategoriesSection from "@/components/CategoriesSection";
 import CategoryComp from "@/components/CategoryComp";
 import ProductComp from "@/components/ProductComp";
 import Image from "next/image";
@@ -26,8 +27,9 @@ export default function Home() {
             />
           </div>
         </div>
-        <section className="w-full px-[24px] md:px-[120px] py-[40px] flex flex-col">
-          {/* Category Option */}
+
+        <CategoriesSection />
+        {/* <section className="w-full px-[24px] md:px-[120px] py-[40px] flex flex-col">
           <div className="w-full h-[49px] bg-[#fefefe] flex justify-between items-center">
             <h5 className="hidden md:flex font-medium text-[20px] leading-[25.2px]">
               Categories
@@ -41,11 +43,10 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Products Display */}
           <div className="w-full py-[24px] flex flex-col gap-[24px]">
             <CategoryComp title="For You" />
             <CategoryComp title="New Products" />
-            {/* Trending */}
+            
             <div className="w-full">
               <p className="text-medium md:font-semibold text-base md:text-[24px] leading-[20.16px] md:leading-[30.24px] text-[#151515]">
                 Trending
@@ -57,7 +58,7 @@ export default function Home() {
             <CategoryComp title="Women" />
             <CategoryComp title="Sneakers" />
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );
