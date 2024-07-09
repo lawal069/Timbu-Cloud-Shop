@@ -57,18 +57,6 @@ const CategoriesSection = () => {
       </div>
       <TabsContent value="all">
         <div className="w-full py-[24px] flex flex-col gap-[24px]">
-          {/* <CategoryComp title="For You" /> */}
-          {/* <CategoryComp title="New Products" /> */}
-
-          {/* Trending */}
-          <div className="w-full">
-            <p className="text-medium md:font-semibold text-base md:text-[24px] leading-[20.16px] md:leading-[30.24px] text-[#151515]">
-              Trending
-            </p>
-            <div className="w-full flex">
-              <div></div>
-            </div>
-          </div>
           <CategoryComp title="Men" />
           <CategoryComp title="Women" />
           <CategoryComp title="Sneakers" />
